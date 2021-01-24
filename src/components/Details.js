@@ -31,7 +31,7 @@ const Details = () => {
                 <h3>Description</h3>
                 <div>{product.description}</div>
                 <h3>Categories</h3>
-                <div>{product.categories.map(item => `${item.name}, `)}</div>
+                <div>{product.categories.map(item => `${item.name},  `)}</div>
                 <div className="details__prices">
     <span className="details__actaul">{currencyFormatter.format(product.price, { code: 'USD' })}</span>
     <span className="details__discount">{currencyFormatter.format(product.discount_amount, { code: 'USD' })}</span>
